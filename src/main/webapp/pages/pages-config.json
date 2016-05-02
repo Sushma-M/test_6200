@@ -8,6 +8,9 @@
   "name" : "Main",
   "type" : "PAGE"
 }, {
+  "name" : "edsdsd",
+  "type" : "PAGE"
+}, {
   "name" : "footer",
   "type" : "FOOTER"
 }, {
