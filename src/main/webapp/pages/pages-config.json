@@ -20,6 +20,9 @@
   "name" : "rightnav",
   "type" : "RIGHTNAV"
 }, {
+  "name" : "testpage",
+  "type" : "PAGE"
+}, {
   "name" : "topnav",
   "type" : "TOPNAV"
 } ]
