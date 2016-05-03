@@ -1,0 +1,160 @@
+{
+  "Testdb322Table2Data" : {
+    "_id" : "wm-Testdb322Table2Data-wm.LiveVariable-1462254966741",
+    "name" : "Testdb322Table2Data",
+    "owner" : "Page",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ ],
+    "operation" : "read",
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "Table2",
+    "isList" : true,
+    "saveInPhonegap" : false,
+    "firstRow" : 0,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "liveSource" : "testdb322",
+    "ignoreCase" : false,
+    "matchMode" : "start",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "id",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "ID",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "identity",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      }, {
+        "fieldName" : "column2",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN2",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      }, {
+        "fieldName" : "column3",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN3",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      } ],
+      "entityName" : "Table2",
+      "fullyQualifiedName" : "com.test_6200.testdb322.Table2",
+      "primaryFields" : [ "id" ]
+    },
+    "isDefault" : true,
+    "bindCount" : 2,
+    "tableName" : "TABLE2",
+    "properties" : [ ],
+    "relatedTables" : [ ],
+    "package" : "com.test_6200.testdb322.Table2"
+  },
+  "Testinsert" : {
+    "_id" : "wm-Testinsert-wm.LiveVariable-1462254066997",
+    "name" : "Testinsert",
+    "owner" : "Page",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ {
+      "target" : "column2",
+      "value" : "bind:Widgets.radioset1.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "column3",
+      "value" : "aaaa",
+      "type" : "string"
+    } ],
+    "operation" : "insert",
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "Table2",
+    "isList" : false,
+    "saveInPhonegap" : false,
+    "firstRow" : 0,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "liveSource" : "testdb322",
+    "ignoreCase" : false,
+    "matchMode" : "start",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "id",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "ID",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "identity",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      }, {
+        "fieldName" : "column2",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN2",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      }, {
+        "fieldName" : "column3",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN3",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      } ],
+      "entityName" : "Table2",
+      "fullyQualifiedName" : "com.test_6200.testdb322.Table2",
+      "primaryFields" : [ "id" ]
+    },
+    "tableName" : "TABLE2",
+    "properties" : [ ],
+    "relatedTables" : [ ],
+    "filterFields" : { },
+    "inputFields" : { },
+    "package" : "com.test_6200.testdb322.Table2"
+  }
+}

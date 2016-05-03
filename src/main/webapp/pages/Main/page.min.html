@@ -19,9 +19,182 @@ Application.$controller("MainPageController", ["$scope", function ($scope) {
     };
 
 }]);
+
+Application.$controller("grid1Controller", ["$scope",
+	function($scope) {
+		"use strict";
+		$scope.ctrlScope = $scope;
+	}
+]);
+
+Application.$controller("liveform1Controller", ["$scope",
+	function($scope) {
+		"use strict";
+		$scope.ctrlScope = $scope;
+	}
+]);
 </script>
 <script id="Main.variables.json">
-var _MainPage_Variables_ ={}
+var _MainPage_Variables_ ={
+  "Testdb322Table2Data" : {
+    "_id" : "wm-Testdb322Table2Data-wm.LiveVariable-1462254966741",
+    "name" : "Testdb322Table2Data",
+    "owner" : "Page",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ ],
+    "operation" : "read",
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "Table2",
+    "isList" : true,
+    "saveInPhonegap" : false,
+    "firstRow" : 0,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "liveSource" : "testdb322",
+    "ignoreCase" : false,
+    "matchMode" : "start",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "id",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "ID",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "identity",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      }, {
+        "fieldName" : "column2",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN2",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      }, {
+        "fieldName" : "column3",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN3",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      } ],
+      "entityName" : "Table2",
+      "fullyQualifiedName" : "com.test_6200.testdb322.Table2",
+      "primaryFields" : [ "id" ]
+    },
+    "isDefault" : true,
+    "bindCount" : 2,
+    "tableName" : "TABLE2",
+    "properties" : [ ],
+    "relatedTables" : [ ],
+    "package" : "com.test_6200.testdb322.Table2"
+  },
+  "Testinsert" : {
+    "_id" : "wm-Testinsert-wm.LiveVariable-1462254066997",
+    "name" : "Testinsert",
+    "owner" : "Page",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ {
+      "target" : "column2",
+      "value" : "bind:Widgets.radioset1.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "column3",
+      "value" : "aaaa",
+      "type" : "string"
+    } ],
+    "operation" : "insert",
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "Table2",
+    "isList" : false,
+    "saveInPhonegap" : false,
+    "firstRow" : 0,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "liveSource" : "testdb322",
+    "ignoreCase" : false,
+    "matchMode" : "start",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "id",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "ID",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "identity",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      }, {
+        "fieldName" : "column2",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN2",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      }, {
+        "fieldName" : "column3",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "COLUMN3",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
+      } ],
+      "entityName" : "Table2",
+      "fullyQualifiedName" : "com.test_6200.testdb322.Table2",
+      "primaryFields" : [ "id" ]
+    },
+    "tableName" : "TABLE2",
+    "properties" : [ ],
+    "relatedTables" : [ ],
+    "filterFields" : { },
+    "inputFields" : { },
+    "package" : "com.test_6200.testdb322.Table2"
+  }
+}
 </script>
 <script id="Main.html" type="text/ng-template">
 <wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main">
@@ -30,6 +203,42 @@ var _MainPage_Variables_ ={}
     <wm-content name="content">
         <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
         <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
+            <wm-composite name="composite1">
+                <wm-label class="col-md-3 control-label" name="label1"></wm-label>
+                <wm-container class="col-md-9" name="container1">
+                    <wm-radioset height="auto" name="radioset1"></wm-radioset>
+                </wm-container>
+            </wm-composite>
+            <wm-button class="btn-default" caption="Button" type="button" name="button1" on-click="Testinsert"></wm-button>
+            <wm-livegrid formlayout="dialog" name="livegrid1" service="testdb322@Table2">
+                <wm-grid gridfirstrowselect="true" deleterow="true" updaterow="true" insertrow="true" readonlygrid="false" title="TABLE2 List" dataset="bind:Variables.Testdb322Table2Data.dataSet" navigation="Basic" name="grid1">
+                    <wm-grid-column binding="id" caption="Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true"></wm-grid-column>
+                    <wm-grid-column binding="column2" caption="Column2" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                    <wm-grid-column binding="column3" caption="Column3" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                </wm-grid>
+                <wm-liveform novalidate="false" title="TABLE2 Info" formlayout="dialog" dataset="bind:Variables.Testdb322Table2Data.dataSet" captionalign="left" captionposition="top" name="liveform1">
+                    <wm-layoutgrid name="layoutgrid1">
+                        <wm-gridrow name="gridrow1">
+                            <wm-gridcolumn columnwidth="12" show="hide" name="gridcolumn1">
+                                <wm-form-field name="id" displayname="Id" required="true" show="false" generator="identity" primary-key="true" key="id" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="12" show="show" name="gridcolumn2">
+                                <wm-form-field name="column2" displayname="Column2" required="false" show="true" generator="assigned" primary-key="false" key="column2" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                widget="text"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow2">
+                            <wm-gridcolumn columnwidth="12" show="show" name="gridcolumn3">
+                                <wm-form-field name="column3" displayname="Column3" required="false" show="true" generator="assigned" primary-key="false" key="column3" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                widget="text"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow3"></wm-gridrow>
+                    </wm-layoutgrid>
+                    <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="wi wi-cancel" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true"></wm-form-action>
+                    <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action>
+                </wm-liveform>
+            </wm-livegrid>
         </wm-page-content>
         <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
